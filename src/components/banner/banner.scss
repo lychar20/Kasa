@@ -42,12 +42,12 @@
     font-size: 42px;
     //font-style: normal;
     position: absolute;
-    left: 25.9%;
-    right: 25.14%;
-    top: 24.32%;
-    bottom: 69.04%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     display: flex;
+    z-index: 10;
 
     @media screen and (max-width: 940px)
     {
