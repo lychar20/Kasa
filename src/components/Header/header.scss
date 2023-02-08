@@ -1,0 +1,45 @@
+.logo {
+    width: 210px;
+    height: 68px;
+    margin-top: 57px;
+    /* background-color: blue; */
+
+    @media screen and (max-width: 500px)
+    {
+        width: 38%;
+        height: auto;
+        
+    } 
+}
+
+.test {
+    display: flex;
+    //background-color: yellow;
+    justify-content: space-between;
+    align-items: center;
+    //justify-content: center;
+    width: 100%;
+    
+
+     nav {
+        position: relative;
+        font-weight: normal;
+        margin-top: 57px;
+        //padding-left: 1328px;
+        //padding-left: 80%;
+        font-size: 24px;
+        //width: 270px;
+        height: 34px;
+        color: red;
+        //margin-right: 0px;
+
+          .Oui {
+            color: red;
+            //background-color: green;
+            margin-left: 20px;
+            //display: flex-end ;
+            
+        }  
+    }
+ 
+}
