@@ -4,9 +4,15 @@ function Banner({img, txt}) {
 	return (
      
         <div className='banner'> 
-            <div className='banner_image' alt="" src= "{img}"/>
+            <img className='banner_image' src={img} alt="banner" />
             <div className='banner_Filter'></div>
-            <div className='banner_txt'> {txt} </div>
+
+
+            {txt != null ?
+                <div className='banner_txt'> {txt} </div>
+            :
+            ""    
+            }
             
         </div>
     ) 
@@ -23,4 +29,20 @@ export default Banner
 /* function Banner({ children }) {
 	return <div className='lmj-banner'>{children}</div>
     
+} */
+
+
+
+/* function Banner({img, txt}) {
+	return (
+     
+        <div className='banner'> 
+            <img className='banner_image' src={img} alt="banner" />
+            <div className='banner_Filter'></div>
+
+            
+            <div className='banner_txt'> {txt} </div>
+            
+        </div>
+    ) 
 } */

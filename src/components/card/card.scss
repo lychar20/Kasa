@@ -1,0 +1,36 @@
+.card {
+    margin-top: 100px;
+    border: 1px #f2f2f2 solid;
+	border-radius: 10px;
+	background-color: #FF6060;
+	color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //margin-left: -5px;
+  width: 25%;
+  height: 300px;
+  position: relative;
+
+  &_txt {
+    position: absolute;
+    background-color: yellow;
+    //margin-left: 5%;
+    //margin-right: 5%;
+    width: 95%;
+    height: 70px;
+   top: 200px;
+   color: black;
+   font-size: 20px;
+
+   //display: flex;
+   //justify-content: center;
+   //align-items: center;
+
+
+    
+ 
+}
+
+
+}
