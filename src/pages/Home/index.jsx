@@ -41,7 +41,7 @@ function Home() {
     
   
 
-<div className="Card">
+<div className="Card_groupe">
 {data.map((appart, id) => (
 <div className="card_logement" key={id}>
  {/* <Link className="link_card_logement" to={`/logement/${appart.id}`}> */}
