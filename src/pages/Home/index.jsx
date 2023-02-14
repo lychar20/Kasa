@@ -6,6 +6,7 @@ import IMG from 'assets/image/IMG.png'
 import Card from "components/card";
 
 
+
 function Home() {
 
   const bannerTxt = "Chez vous partout et ailleurs"
