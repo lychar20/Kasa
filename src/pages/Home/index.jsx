@@ -1,4 +1,5 @@
 //import * as React from "react"; 
+import { Link} from 'react-router-dom' 
 import React,{useState,useEffect} from "react";
 import './home.scss'
 import Banner from 'components/banner/index'
@@ -45,7 +46,11 @@ function Home() {
 <div className="Card_groupe">
 {data.map((appart, id) => (
 <div className="card_logement" key={id}>
-  <Card cover={appart.cover} title={appart.title} />
+
+      <Link className="link_card_logement" to={`/logement/${appart.id}`}> 
+      <Card cover={appart.cover} title={appart.title} />
+     </Link>  
+
 </div>
 
 ))}
