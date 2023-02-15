@@ -5,35 +5,39 @@ import Vector from 'assets/image/Vector.png'
 
 function Collapse (props) {
 
+    
     const [isOpen, setIsOpen] = useState(true)
     /* const display=() => {
         setIsOpen(!isOpen);
     } */ 
 
 
-
+    
     return isOpen ? (
+
         <div className="collapse">
-            <button
+            <div
                 className="collapse_button"
                 onClick={() => setIsOpen(false)}
             >
-              <h2 className="collapse_titre"> {props.aboutTitle} LE TITRE</h2>  <img src={Vectorup} alt='chevronup' className='chevron' />
-            </button>
-
-            <div className="collapse_text">{props.aboutText}
-                Voici le texte
+              <h2 className="collapse_titre"> {props.aboutTitle} <img src={Vectorup} alt='chevronup' className='chevron up' /></h2>  
             </div>
+
+            <div className="collapse_text">{props.aboutText}</div>
 
         </div>
     ) : (
         <div className="collapse_close">
-            <button
+            <div
             className="collapse_close_button"
             onClick={() => setIsOpen(true)}
         >
-            A ouvrir <img src={Vector} alt='chevronup' className='chevron' />
-        </button>
+            {/* A ouvrir <img src={Vector} alt='chevronup' className='chevron' /> */}
+
+            <h2 className="collapse_titre"> {props.aboutTitle} <img src={Vector} alt='chevronup' className='chevron' /> </h2>  
+            
+
+        </div>
         </div>
     )
 

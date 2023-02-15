@@ -49,7 +49,7 @@
     //justify-content: space-around;
     //justify-content: center;
     gap: 30px;
-    margin-top: 100px;
+    //margin-top: 100px;  // test de margin
     //background-color: green;
     background: #F7F7F7;
     padding-left: 4%;
@@ -59,7 +59,6 @@
 
     @media screen and (max-width: 692px) {
         background: none;
-        margin-top: 0px;
         padding-left: 0%;
         width: 100%;
     }

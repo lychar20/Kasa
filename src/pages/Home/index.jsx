@@ -1,4 +1,4 @@
-//import * as React from "react";
+//import * as React from "react"; 
 import React,{useState,useEffect} from "react";
 import './home.scss'
 import Banner from 'components/banner/index'
@@ -45,10 +45,9 @@ function Home() {
 <div className="Card_groupe">
 {data.map((appart, id) => (
 <div className="card_logement" key={id}>
- {/* <Link className="link_card_logement" to={`/logement/${appart.id}`}> */}
   <Card cover={appart.cover} title={appart.title} />
-{/* </Link>  */}
 </div>
+
 ))}
 </div>
 </div>

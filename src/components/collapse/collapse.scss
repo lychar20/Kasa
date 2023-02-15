@@ -1,5 +1,59 @@
 .collapse {
-    width: 200px;
-    height: 30px;
-    background-color: green;
+    height: 47px;
+    
+    //background-color: green;
+    background-color: #FF6060;
+    border-radius: 5px;
+    cursor: pointer;
+    //margin-bottom: 200px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 600px) {
+        margin-bottom: 220px;
+    }
+}
+
+
+.collapse_close {
+    height: 47px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    //display: flex;
+}
+
+.collapse_titre {
+    justify-content: space-between;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-top: 15px ;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.collapse_text {
+    height: auto;
+    background-color: #F6F6F6;
+    height: auto;
+    width: auto;
+
+    @media screen and (max-width: 600px) {
+        height: 170px; 
+    }
+}
+
+.chevron {
+    align-items: flex-end;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    
+}
+
+.up {
+    width: 16px;
+    height: 10px;
 }

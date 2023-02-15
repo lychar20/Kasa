@@ -1,0 +1,28 @@
+.error_message {
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #FF6060;
+    position: relative;
+    
+} 
+
+ .number_error {
+    font-size: 288px;
+    font-weight: 700;
+}
+
+.error_text {
+    font-size: 36px;
+    font-weight: 500;
+} 
+
+.retour {
+    
+    position: absolute;
+    bottom: 0;
+    color: #FF6060;
+}
