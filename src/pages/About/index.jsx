@@ -6,6 +6,8 @@ import aboutArray from 'assets/data/aboutArray.json'
 import './about.scss'
 //import { Link, Outlet } from "react-router-dom";
 
+
+
 function About() {
     return (
       //<div>
@@ -25,6 +27,7 @@ function About() {
         )}
       </div>
 
+          
       </>
       //</div>
 

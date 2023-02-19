@@ -6,7 +6,7 @@ import Vector from 'assets/image/Vector.png'
 function Collapse (props) {
 
     
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
     /* const display=() => {
         setIsOpen(!isOpen);
     } */ 
