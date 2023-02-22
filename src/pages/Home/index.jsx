@@ -51,7 +51,7 @@ function Home() {
       <Card cover={appart.cover} title={appart.title} />
      </Link>  
 
-
+   
 
 ))}
 </div>

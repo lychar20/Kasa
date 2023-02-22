@@ -1,0 +1,41 @@
+.carousel {
+    height: 300px;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 25px;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    width: 24px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .arrow_left {
+    margin-top: -20px;
+    margin-left: 25px;
+    top: 50%;
+  }
+
+  .arrow_right {
+    margin-top: -20px;
+    margin-right: 25px;
+    right: 0;
+    top: 50%;
+  }
+  
+
+.carrousel_img {
+    width: 100%;
+    height: 100%;
+    //height: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+    display: none;
+}
+
+.carrousel_img.actif {
+    display: block;
+  }
