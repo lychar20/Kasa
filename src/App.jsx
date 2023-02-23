@@ -8,10 +8,12 @@ import About from './pages/About'
 import Housing from './pages/Housing'
 import Header from './components/Header'
 import Error from 'components/Error/index'
+import Footer from './components/footer'
+
 
 const App = () => {
   return (
-    <div className="">
+    <div className="App">
            
       <Routes>
         <Route path="/" element={<Header />}>
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 };

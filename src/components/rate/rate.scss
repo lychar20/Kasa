@@ -1,0 +1,24 @@
+.rate {
+    width: 205px;
+
+    /* @media screen and (max-width: 460px)
+    {
+        width: 120px;
+    } */
+}
+
+.filled_stars {
+
+     @media screen and (max-width: 460px)
+    {
+        width: 25px;
+    } 
+}
+
+.none_filled_star {
+
+     @media screen and (max-width: 460px)
+    {
+        width: 25px;
+    } 
+}

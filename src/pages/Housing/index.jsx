@@ -1,13 +1,16 @@
 //import * as React from "react"; 
-import {useState,useEffect, useNavigate} from "react";
+import {useState,useEffect} from "react";
 import { useParams } from "react-router-dom";
 //import axios from "axios";
 import Rate from "components/rate/index";
 import Carousel from "components/Carousel/index";
-
-//import logements2 from "assets/data/logements2.json";
+import { useNavigate } from "react-router-dom";
+import Title from "components/title";
 //import Error from 'components/Error/index'
-import Tag from "components/Tags/tag";
+import Tag from "components/Tags";
+import Host from "components/host";
+import './housing.scss'
+import Collapse from "components/collapse";
 
 
 function Housing() {
@@ -16,7 +19,7 @@ function Housing() {
   const navigate = useNavigate();
   const [data,setData]= useState([]);
 
-  const getDatas=()=> {
+  const getData=()=> {
     fetch('/logements.json'
     ,{
       headers : {
@@ -32,39 +35,72 @@ function Housing() {
     .then(function(data){
       console.log(data);
       const apart = data.find((item) => item.id ===id);
+
+      
       
       if (!apart) navigate("components/Error/index")
       setData(apart);
-    });
+    })
+
+    .catch(function(err) {
+  
+    })
+
   }
   useEffect(()=>{
-    getDatas()
+    getData()
   },[])
 
   
 
   return (
 
-    <div>
-    <Rate rate={data.rating} className="rate" />
-    {data.title}
-
+    <div className="Page_entiere">
     
-    <Carousel photo={data.pictures}  />
-    <Tag des= {data.tags} />
-
-
-    
-
-    
-
-
+    <main className="main"> {data.pictures? <Carousel photo={data.pictures}  /> : ""    } </main>
     
     
-   
+    <section className="section">
+
+      <div className="bloc_one">
+        <Title  name= {data.title}  city= {data.location} />
+        <Tag des= {data.tags} />
+      </div>
+
+      <div className="bloc_two">
+        {data.pictures? <Host nickname={data.host.name} avatar={data.host.picture } /> : ""    }
+        <Rate rate={data.rating} className="rate" />
+      </div>
+
+    </section>
 
     
-</div>
+    <article className="article">
+
+      <div className="bloc_three">
+          <Collapse 
+            key={id} 
+            aboutTitle={"Description"}
+            aboutText={data.description}
+          />
+
+      </div>
+
+
+      <div className="bloc_four">
+        <Collapse aboutTitle={"Equipements"} aboutText={data.equipments?.map((equip, furn) => (
+          <p key={furn}>  {equip} </p>
+        ))} />
+
+      </div>
+
+
+    </article>
+    
+    
+
+    
+    </div> //fin de div page entiere
 
     
   );

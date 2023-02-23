@@ -1,5 +1,6 @@
 import none_filled_star from "assets/image/none_filled_star.svg";
 import filled_star from "assets/image/filled_star.svg";
+import './rate.scss'
 
 function Rate({rate}) {
 

@@ -1,0 +1,35 @@
+.name {
+    color: #FF6060;
+    font-size: 18px;
+
+    @media screen and (max-width: 460px)
+    {
+        width: 80px;
+    }
+
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    margin-top: 29px;
+    gap: 20px;
+
+    @media screen and (max-width: 895px)
+    {
+        margin-top: 0;
+    }
+
+    @media screen and (max-width: 460px)
+    {
+        gap: 7px;
+    }
+
+    
+}

@@ -1,0 +1,22 @@
+.title {
+    width: 100%;
+    color: #FF6060;
+    
+}
+
+.title_apart {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0px;
+
+    @media screen and (max-width: 692px)
+    {
+        font-size: 25px;
+    }
+
+}
+
+.location {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
