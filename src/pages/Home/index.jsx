@@ -1,4 +1,3 @@
-//import * as React from "react"; 
 import { Link} from 'react-router-dom' 
 import React,{useState,useEffect} from "react";
 import './home.scss'
@@ -71,28 +70,7 @@ function Home() {
 
 
 
-  //----------------------------------------test--------------------------------------------
-
-/*   function Home() {
-
-    const bannerTxt = "Chez vous partout et ailleurs"
-    const cardTxt = "Titre de la location "
-  
-      return (
-        <div>
-          
-  
-          <Banner img={IMG} txt={bannerTxt} />
-          <Card txt={cardTxt} />
-          
-          
-        </div>
-      )
-    } */
-
-
-
-    //------------------------------nouveu test
+ 
 
 
     

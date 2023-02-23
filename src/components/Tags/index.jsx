@@ -13,12 +13,7 @@ function Tag({des}) {
 
 
     
-  /*   {des.map((des, cle) => {
-        return (
-          <div className="tag"> {des} </div>
-        );
-      })}
-     */
+
     
 }
 

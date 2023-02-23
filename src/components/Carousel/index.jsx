@@ -3,13 +3,11 @@ import React,{useState} from "react";
 import Vector_left from "assets/image/Vector_left.png"
 import Vector_right from "assets/image/Vector_right.png"
 
-function Carousel({photo, picLength}) {
+function Carousel({photo}) {
 
     const [index, setIndex] = useState(0);
-    //const length = picLength ;
     const length = photo.length ;
     console.log("PHOTO", photo);
-    //const picLength = photo.length;
     
     // a chaque fois qu'on clique, cela met a jour index qui sera égale a -1
     const handlePrevious = () => {

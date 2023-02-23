@@ -7,11 +7,7 @@ function Collapse (props) {
 
     
     const [isOpen, setIsOpen] = useState(false)
-    /* const display=() => {
-        setIsOpen(!isOpen);
-    } */ 
-
-
+  
     
     return isOpen ? (
 
@@ -32,7 +28,7 @@ function Collapse (props) {
             className="collapse_close_button"
             onClick={() => setIsOpen(true)}
         >
-            {/* A ouvrir <img src={Vector} alt='chevronup' className='chevron' /> */}
+
 
             <h2 className="collapse_titre"> {props.aboutTitle} <img src={Vector} alt='chevronup' className='chevron' /> </h2>  
             

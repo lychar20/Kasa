@@ -9,8 +9,6 @@ function Error() {
 
         <h1 className='error_text'>Oups La page que vous demandez n'existe pas</h1>
 
-        {/* <div className='retour'>Retourner sur la page d'accueil</div> */}
-
         <Link to="/" className='retour'>Retourner sur la page d'accueil</Link>
         <Outlet /> 
       </div>
