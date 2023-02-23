@@ -1,16 +1,13 @@
-import './host.scss'
+import "./host.scss";
 
-function Host({nickname, avatar}) {
-	return (
-     <div className='host'>
+function Host({ nickname, avatar }) {
+  return (
+    <div className="host">
+      <span className="name"> {nickname} </span>
 
-        <span className='name'> {nickname} </span>
-        
-        { <img src={avatar} alt="photo_avatar" className='avatar' /> }
-        
-        </div>
-        
-    ) 
+      {<img src={avatar} alt="photo_avatar" className="avatar" />}
+    </div>
+  );
 }
 
-export default Host
+export default Host;
