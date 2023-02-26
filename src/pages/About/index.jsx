@@ -7,7 +7,7 @@ import "./about.scss";
 
 function About() {
   return (
-    //<div>
+    <div className="about">
     <>
       <Banner img={IMG2} />
 
@@ -21,7 +21,7 @@ function About() {
         ))}
       </div>
     </>
-    //</div>
+    </div>
   );
 }
 

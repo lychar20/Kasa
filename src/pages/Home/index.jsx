@@ -17,11 +17,9 @@ function Home() {
       },
     })
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
         setData(myJson);
       });
   };
@@ -30,10 +28,10 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       <Banner img={IMG} txt={bannerTxt} />
 
-      <div className="Card_groupe">
+      <div className="card_group">
         {data.map((appart, id) => (
           <Link
             className="link_card_logement"

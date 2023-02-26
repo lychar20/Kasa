@@ -12,13 +12,19 @@
     } 
 }
 
-.test {
+.hearder_marge {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.header {
     display: flex;
     //background-color: yellow;
     justify-content: space-between;
     align-items: center;
     //justify-content: center;
     width: 100%;
+   
     
 
      nav {
@@ -38,7 +44,7 @@
             font-size: 20px;
         }
 
-          .Oui {
+          .link {
             color: red;
             //background-color: green;
             margin-left: 20px;

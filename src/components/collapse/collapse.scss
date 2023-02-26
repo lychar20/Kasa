@@ -7,8 +7,9 @@
     cursor: pointer;
     //margin-bottom: 200px;
     margin-bottom: 100px;
+    color: #FF6060;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         margin-bottom: 190px;
     }
 }
@@ -29,9 +30,11 @@
     font-size: 20px;
     font-weight: 500;
     color: white;
-    padding-top: 15px ;
+    padding-top: 10px ;
     padding-left: 10px;
-    align-items: center;
+    //align-items: center;
+    //display: flex;
+    //justify-items: center;
 }
 
 .collapse_text {
@@ -39,17 +42,24 @@
     background-color: #F6F6F6;
     height: auto;
     width: auto;
+    padding-left: 2%;
+    padding-right: 2%;
 
-    @media screen and (max-width: 600px) {
-        height: 170px; 
-    }
+   // @media screen and (max-width: 768px) {
+   //     height: 190px; 
+   // }
+
+    
+
+    
 }
 
 .chevron {
     align-items: flex-end;
     position: absolute;
     right: 10px;
-    top: 25px;
+    //top: 25px;
+    top: 50%;
     
 }
 

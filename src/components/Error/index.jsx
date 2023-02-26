@@ -10,7 +10,7 @@ function Error() {
         Oups La page que vous demandez n'existe pas
       </h1>
 
-      <Link to="/" className="retour">
+      <Link to="/" className="back">
         Retourner sur la page d'accueil
       </Link>
       <Outlet />

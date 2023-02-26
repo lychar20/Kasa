@@ -15,14 +15,14 @@ function Rate({ rate }) {
               key={rangeElem.toString()}
               className="filled_stars"
               src={filled_star}
-              alt=""
+              alt="filled-star"
             />
           ) : (
             <img
               key={rangeElem.toString()}
               className="none_filled_star"
               src={none_filled_star}
-              alt=""
+              alt="none-filled-star"
             />
           )
         )}

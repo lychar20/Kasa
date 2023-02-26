@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Rate from "components/rate/index";
-import Carousel from "components/Carousel/index";
+import Carousel from "components/carousel/index";
 import { useNavigate } from "react-router-dom";
 import Title from "components/title";
-import Tag from "components/Tags";
+import Tag from "components/tags";
 import Host from "components/host";
 import "./housing.scss";
 import Collapse from "components/collapse";
@@ -22,11 +22,9 @@ function Housing() {
       },
     })
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
         const apart = data.find((item) => item.id === id);
 
         if (!apart) navigate("components/Error/index");

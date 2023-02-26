@@ -7,6 +7,14 @@
     align-items: center;
     height: 209px;
     margin-top: 150px;
+    //padding-right: 5%;
+    //padding-left: 5%;
+
+    @media screen and (max-width: 450px) {
+        margin-top: 300px; 
+    }
+    
+   
 }
 
 .logo_footer {

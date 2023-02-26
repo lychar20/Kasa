@@ -26,7 +26,7 @@ function Carousel({ photo }) {
         <img
           className="arrow arrow_left"
           src={Vector_left}
-          alt=""
+          alt="pic-arrow-left"
           onClick={handlePrevious}
         />
       )}
@@ -37,7 +37,7 @@ function Carousel({ photo }) {
             key={cle}
             className={cle === index ? "carrousel_img actif" : "carrousel_img"}
             src={photo}
-            alt=""
+            alt="pic_carousel"
           />
         );
       })}
@@ -46,7 +46,7 @@ function Carousel({ photo }) {
         <img
           className="arrow arrow_right"
           src={Vector_right}
-          alt=""
+          alt="pic-arrow-right"
           onClick={handleNext}
         />
       )}
