@@ -35,7 +35,7 @@ function Housing() {
   };
   useEffect(() => {
     getData();
-  }, []);
+  },[]);
 
   return (
     <div className="Page_entiere">
